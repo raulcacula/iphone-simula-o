@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <link rel="stylesheet" href="apple.css">
+
+
+    <div class="section-celular left hidden " >
+        <div class="celular hidden "  id="celular">
+            <div class="celular-img">
+                <img id="image-1" src="https://w0.peakpx.com/wallpaper/730/501/HD-wallpaper-iphone-14-pro-thumbnail.jpg" alt="">
+                <img id="image-2" src="https://w0.peakpx.com/wallpaper/731/954/HD-wallpaper-iphone-14-ka-silver-iphone-14-iphone-thumbnail.jpg" alt="">
+                <img id="image-3" src="https://i.redd.it/7j7gpwil2iq91.jpg" alt="">
+                <img id="image-4" src="https://i.pinimg.com/236x/ef/04/34/ef0434deeb6fc7f5c45694a9e2414761.jpg" alt="">
+            </div>
+        </div><!--CELULAR-->
+        <div class="camera" >
+            <div class="camera-frontal"></div>
+        </div>
+
+        <H1 class="titulo-ligar">Ligue o iphone</H1>
+
+        <div class="btn-liga "  onclick="ligarDesligar()">
+        </div>
+        <a href="">
+        <div class="btn-desligar">
+          
+        </div>
+        </a>
+        <div class="btn-aumenta">
+        </div>
+        <div class="btn-diminuir">
+            
+        </div>
+
+        <div class="sinais">
+
+            <i class="fa-solid fa-signal"></i>
+            <i class="fa-solid fa-wifi"></i>
+            <i class="fa-solid fa-battery-three-quarters"></i>
+
+        </div>
+
+
+        <div class="dia-details">
+            <span id="dia">Quarta-feira,</span>
+            <span> 21 de março</span>
+            <div class="horario-details">
+                <span id="hour">00</span>
+                <span>:</span>
+                <span id="min">00</span>
+                <span></span>
+                <span id="sec">00</span>
+            </div>
+        </div>
+
+        <div class="details-bateria">
+            <div class="bateria">
+                <div class="details-iphone">
+                <p>Iphone do Raul h</p>
+                <span>sua bateria está em:</span>
+                </div>
+                <div class="bateria-logo">
+                    <span>50%</span>
+                    <br>
+                    <span class="progresso"></span>
+                </div>
+            </div>
+        </div>
+
+        <section class="container-notifica">
+        <div class="details-notifica">
+            <div class="notifica">
+                <img src="https://logosmarcas.net/wp-content/uploads/2021/04/Duolingo-Logo.png" alt="">
+                <div class="noti">
+                    <h1>Volte para cá!! </h1>
+                    <span class="not-hrs"> há 3hrs</span>
+                    <p>para aprender coisas novas</p>
+                </div>
+            </div>
+        </div><!--NOTIFICAÇÃO-->
+        <div class="details-notifica">
+            <div class="notifica">
+                <img src="https://static.vecteezy.com/system/resources/previews/018/930/415/non_2x/instagram-logo-instagram-icon-transparent-free-png.png" alt="">
+                <div class="noti">
+                    <h1>Volte para cá!! </h1>
+                    <span class="not-hrs"> há 30s</span>
+                    <p>Novas mensagens te esperam!!</p>
+                </div>
+            </div>
+        </div><!--NOTIFICAÇÃO-->
+        <div class="details-notifica">
+            <div class="notifica">
+                <img src="https://logodownload.org/wp-content/uploads/2015/04/whatsapp-logo-png-0.png" alt="">
+                <div class="noti">
+                    <h1>Mensagem nova </h1>
+                    <span class="not-hrs"> há 2min</span>
+                    <p>Mãe enviou uma (mensagem de voz)</p>
+                </div>
+            </div>
+        </div><!--NOTIFICAÇÃO-->
+        <div class="details-notifica">
+            <div class="notifica">
+                <img src="https://static.vecteezy.com/system/resources/previews/023/986/970/non_2x/linkedin-logo-linkedin-logo-transparent-linkedin-icon-transparent-free-free-png.png" alt="">
+                <div class="noti">
+                    <h1>Linkedin</h1>
+                    <span class="not-hrs"> há 12min</span>
+                    <p>Vaga de emprego na Amazon </p>
+                </div>
+            </div>
+        </div><!--NOTIFICAÇÃO-->
+        </section>
+
+       
+        <div class="details-tab">
+            <button id="btn-arrasta" onclick="arrastar()">
+                <span>Arraste para cima</span>
+                <i class="fa-solid fa-angles-left"></i>
+            </button>
+        </div>
+
+        <div class="btn-gesto">
+        </div>
+    </div><!--section-->
+
+    <div class="button-cor">
+        <button id="btn-1" onclick="image1()">
+        </button>
+
+        <button id="btn-2" onclick="image2()">            
+        </button>
+
+        <button id="btn-3" onclick="image3()">          
+        </button>
+
+        <button id="btn-4" onclick="image4()">         
+        </button>
+
+
+
+     <div class="container-senha">
+        <div class="blurr"></div>
+
+            <div class="titulo-senha">
+                <span><i class="fa-solid fa-lock"></i></span>
+                <h1>Digite sua senha</h1>
+                <br>
+                <div class="senha-check">
+                    <input type="button" id="senhaBTN-1">
+                    <input type="button" id="senhaBTN-2">
+                    <input type="button" id="senhaBTN-3">
+                </div><!--SENHA CHECK-->
+        </div>
+
+
+        <!--numeros senha-->
+        <div class="numeros-container">
+            <div class="numbers">
+                <button onclick="senhaclick1()">1
+                   <span>xx</span>
+                </button>
+                <button onclick="senhaclick2()">2
+                    <span>abc</span>
+                </button>
+                <button onclick="senhaclick3()">3
+                    <span>def</span>
+                </button>
+                <button>4
+                    <span>ghi</span>
+                </button>
+                <button>5
+                    <span>jkl</span>
+                </button>
+                <button>6
+                   <span>mno</span>
+                </button>
+                <button>7
+                    <span>pqr</span>
+                </button>
+                <button>8
+                    <span>stu</span>
+                </button>
+                <button>9
+                    <span>vwy</span>
+                </button>
+                <button>0
+                   <span>z</span>
+                </button>
+            </div>
+
+            <div class="senha-end">
+                <div>
+                    <button>Emergência</button>
+                </div>
+                <div>
+                    <button onclick="voltar()">voltar</button>
+                </div>
+            </div>
+        </div>
+    </div><!---CONTAINER -->
+
+
+
+    <div class="tela-inicial">
+       <div class="wid-bateria">
+         <h1>50%</h1>
+         <span class="progresso2"></span>
+       </div>
+       <div class="tela-apps">
+        <div class="apps-flex">
+         <a href="">
+            <img class="apps-flex2-img2" src="https://i.pinimg.com/736x/0c/42/9e/0c429e94f1fac299575288d3b87b6d97.jpg" alt="">
+                <h1>FaceTime</h1>
+         </a>
+        </div>
+
+        <div class="apps-flex">
+            <a onclick="notasLibera()">
+            <img class="apps-flex2-img2" src="https://support.apple.com/library/content/dam/edam/applecare/images/en_US/ios/ios11-notes-app-icon.png" alt="">
+                <h1>notas</h1>
+            </a>
+        </div>
+       </div>
+
+       <!--APP TELA INICIAL-->
+
+       <div class="container-apps" id="template-areas">
+        <div id="apps">
+            <div class="apps-flex2">
+                <a onclick="cameraLibera()">
+                    <img class="apps-flex2-img" src="https://icons.veryicon.com/png/o/miscellaneous/iview30-ios-style/ios-camera-6.png" alt="">
+                    <h1>camera</h1>
+                </a>
+            </div>
+            
+            <div class="apps-flex2">
+                <a  onclick="galeriaLibera()">
+                    <img class="apps-flex2-img2" src="https://cdn.iconscout.com/icon/free/png-256/free-apple-photos-493155.png?f=webp" alt="">
+                    <h1>fotos</h1>
+                </a>
+            </div>
+
+            <div class="apps-flex2">
+                <a href="">
+                    <img class="apps-flex2-img2" src="https://professordoiphone.com.br/wp-content/uploads/2020/04/iphone-settings-icon-min.png" alt="">
+                    <h1>Ajustes</h1>
+                </a>
+            </div>
+
+            <div class="apps-flex2">
+                <a  onclick="storeLibera()">
+                    <img class="apps-flex2-img2" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/App_Store_%28iOS%29.svg/512px-App_Store_%28iOS%29.svg.png" alt="">
+                    <h1>App Store</h1>
+                </a>
+            </div>
+
+            <div class="apps-flex2">
+                <a href="">
+                    <img class="apps-flex2-img2" src="data:image/png;base64,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" alt="">
+                    <h1>Apple TV</h1>
+                </a>
+            </div>
+
+            <div class="apps-flex2">
+                <a href="">
+                    <img class="apps-flex2-img2" src="https://static-00.iconduck.com/assets.00/gmail-icon-1024x1024-09wrt8am.png" alt="">
+                    <h1>Gmail</h1>
+                </a>
+            </div>
+
+            <div class="apps-flex2">
+                <a href="">
+                    <img class="apps-flex2-img8" src="https://help.apple.com/assets/6580A106ABAA01F3080E7505/6580A11008DFECBA0F060581/pt_BR/fed2ef13bae05b029ee55388af226687.png" alt="">
+                    <h1>Watch</h1>
+                </a>
+            </div>
+            <div class="apps-flex2">
+                <a href="">
+                    <img class="apps-flex2-img9" src="data:image/jpeg;base64,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" alt="">
+                    <h1>Relogio</h1>
+                </a>
+            </div>
+        </div>
+       </div><!--container-->
+
+       <div class="clima">
+        <div class="clima-img">
+            <img src="https://pbagora.s3.amazonaws.com/20190314102406/20171225091746.jpg" alt="">
+            <div class="clima-titulo">
+                <h1>Meu local</h1>
+                <p>São paulo</p>
+                <span>Chuva  <i class="fa-solid fa-cloud-showers-heavy"></i></span>
+                <div class="clima-icons">
+                    <h1>19*</h1>
+                    <span>máx:25* Min:15*</span>
+                </div>
+            </div>
+        </div>
+       </div>
+
+       <div class="apple-auto">
+        <button></button>
+        <button></button>
+       </div>
+
+
+
+       <div class="tela-bottom" >
+        <div class="tela-wid">
+           <div>
+            <a href="">
+               <img src="https://i.pinimg.com/originals/98/14/6e/98146ec63f05240c321a82f8b35a31c0.png" alt="">
+            </a>
+           </div>
+           <div>
+            <a href="">
+               <img src="https://i.pinimg.com/originals/7b/7b/c6/7b7bc658d3fce83780679e84dc62f2fa.png" alt="">
+            </a>
+           </div>
+        <div>
+            <a href="">
+            <img src="https://cdn.iconscout.com/icon/free/png-256/free-itunes-2844877-2365226.png?f=webp" alt="">
+            </a>
+        </div>
+
+        <div>
+            <a href="">
+            <img src="https://i.pinimg.com/originals/84/4e/8c/844e8cd4ab26c82286238471f0e5a901.png" alt="">
+            </a>
+        </div>
+        </div>
+      </div><!--TELA BOTTOM-->
+
+
+       </div>
+
+
+       <!--APLICATIVO NOTAS-->
+
+       <div class="app-notas">
+
+        <div class="btn-gesto2" onclick="voltarInicio()">
+        </div>
+        <div class="camera2" >
+            <div class="camera-frontal2"></div>
+        </div>
+        <div class="sinais2">
+
+            <i class="fa-solid fa-signal"></i>
+            <i class="fa-solid fa-wifi"></i>
+            <i class="fa-solid fa-battery-three-quarters"></i>
+
+        </div>
+
+        <div class="notas-block">
+            <div class="titulo-notas">
+                <h1>Notas</h1>
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <div class="notas-op">
+                <button>Recentes</button>
+                <button>Favoritos</button>    
+            </div>
+
+            <!-- REPETIÇÕES DE NOTAS-->
+            <div class="notas-arq">
+                <div class="arq-container">
+                    <a href="">
+                    <h1>Notas 1</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam iste commodi ratione at, impedit beatae aut ea sint quam? Facere, numquam veritatis! Alias laborum est amet libero nesciunt aliquam ad?</p>
+                    </a>
+                </div>
+                <div class="arq-container">
+                    <a href="">
+                    <h1>Notas 2</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam iste commodi ratione at, impedit beatae aut ea sint quam? Facere, numquam veritatis! Alias laborum est amet libero nesciunt aliquam ad?</p>
+                    </a>
+                </div>
+                <div class="arq-container">
+                    <a href="">
+                    <h1>Notas 3</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam iste commodi ratione at, impedit beatae aut ea sint quam? Facere, numquam veritatis! Alias laborum est amet libero nesciunt aliquam ad?</p>
+                    </a>
+                </div>      
+                  <div class="arq-container">
+                    <a href="">
+                    <h1>Notas 4</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam iste commodi ratione at, impedit beatae aut ea sint quam? Facere, numquam veritatis! Alias laborum est amet libero nesciunt aliquam ad?</p>
+                    </a>
+                </div>
+                <div class="arq-container">
+                    <a href="">
+                    <h1>Notas 5</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam iste commodi ratione at, impedit beatae aut ea sint quam? Facere, numquam veritatis! Alias laborum est amet libero nesciunt aliquam ad?</p>
+                    </a>
+                </div>
+                <div class="arq-container">
+                    <a href="">
+                    <h1>Notas 6</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam iste commodi ratione at, impedit beatae aut ea sint quam? Facere, numquam veritatis! Alias laborum est amet libero nesciunt aliquam ad?</p>
+                    </a>
+                </div>
+                <div class="arq-container">
+                    <a href="">
+                    <h1>Notas 7</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam iste commodi ratione at, impedit beatae aut ea sint quam? Facere, numquam veritatis! Alias laborum est amet libero nesciunt aliquam ad?</p>
+                    </a>
+                </div>
+                <div class="arq-container">
+                    <a href="">
+                    <h1>Notas 8</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam iste commodi ratione at, impedit beatae aut ea sint quam? Facere, numquam veritatis! Alias laborum est amet libero nesciunt aliquam ad?</p>
+                    </a>
+                </div>
+                <div class="arq-container">
+                    <a href="">
+                    <h1>Notas 9</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam iste commodi ratione at, impedit beatae aut ea sint quam? Facere, numquam veritatis! Alias laborum est amet libero nesciunt aliquam ad?</p>
+                    </a>
+                </div>
+                <div class="arq-container">
+                    <a href="">
+                    <h1>Notas 10</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam iste commodi ratione at, impedit beatae aut ea sint quam? Facere, numquam veritatis! Alias laborum est amet libero nesciunt aliquam ad?</p>
+                    </a>
+                </div>
+            </div>
+
+        </div><!--NOTAS BLOCK-->
+      </div><!--APP NOTAS-->
+
+
+      <div class="app-camera">
+        <div class="btn-gesto3" onclick="voltarInicio2()">
+        </div>
+        <div class="camera3" >
+            <div class="camera-frontal3"></div>
+        </div>
+        <div class="sinais3">
+            <i class="fa-solid fa-signal"></i>
+            <i class="fa-solid fa-wifi"></i>
+            <i class="fa-solid fa-battery-three-quarters"></i>
+        </div>
+        <div class="camera-details">
+        <div class="icon-camera">
+            <button>
+                <i class="fa-solid fa-gear"></i>
+            </button>
+            <button>
+                <i class="fa-solid fa-bolt"></i>
+            </button>
+            <button>
+                <i class="fa-solid fa-filter"></i>
+            </button>
+            <button>
+                <i class="fa-solid fa-clock"></i>
+            </button>
+        </div>
+
+        <div class="camera-foto">
+            <img src="https://images.pexels.com/photos/443446/pexels-photo-443446.jpeg?cs=srgb&dl=pexels-eberhard-grossgasteiger-443446.jpg&fm=jpg">
+        </div>
+
+        <div class="foto-container">
+        <div class="camera-foto-details">
+            
+            <span>camera lenta</span>
+            <span>foto</span>
+            <span>video</span>
+            <span>retrato</span>
+        </div>
+
+        <div class="foto">
+            <button><i class="fa-solid fa-wand-magic"></i></button>
+            <button class="foto-img"></button>
+            <button class="foto-galeria">
+                <img src="https://images.pexels.com/photos/443446/pexels-photo-443446.jpeg?cs=srgb&dl=pexels-eberhard-grossgasteiger-443446.jpg&fm=jpg" alt="">
+            </button>
+        </div>
+        </div>
+        </div>
+        </div><!--CAMERA DETAILS-->
+      </div><!--camera-->
+
+
+      <div class="app-galeria">
+        <div class="btn-gesto2" onclick="voltarInicio3()">
+        </div>
+        <div class="camera2" >
+            <div class="camera-frontal2"></div>
+        </div>
+        <div class="sinais2">
+            <i class="fa-solid fa-signal"></i>
+            <i class="fa-solid fa-wifi"></i>
+            <i class="fa-solid fa-battery-three-quarters"></i>
+        </div>
+
+        <div class="seta-fotos" onclick="setaFt()">
+            <i class="fa-solid fa-chevron-left"></i>
+        </div>
+        <!--REPETIÇÕES DE FOTOS-->
+        <div class="fotos-container">
+            <img src="https://cdn.wallpapersafari.com/95/5/UK50Ih.jpg" alt="">
+            <div class="video">
+                <img  src="https://cdn.dribbble.com/users/7171905/screenshots/20301593/ezgif.com-gif-maker__2_.gif" alt="">    
+            </div>
+
+            <img src="https://cdn.wallpapersafari.com/95/5/UK50Ih.jpg" alt="">
+            <img src="https://cdn.wallpapersafari.com/95/5/UK50Ih.jpg" alt="">
+            <img src="https://cdn.wallpapersafari.com/95/5/UK50Ih.jpg" alt="">
+            <img src="https://cdn.wallpapersafari.com/95/5/UK50Ih.jpg" alt="">
+            <img src="https://cdn.wallpapersafari.com/95/5/UK50Ih.jpg" alt="">
+            <img src="https://cdn.wccftech.com/wp-content/uploads/2022/09/iphone-14-wallpapers.jpg" alt="">
+            <img src="https://cdn.wccftech.com/wp-content/uploads/2022/09/iphone-14-wallpapers.jpg" alt="">
+            <img src="https://cdn.wccftech.com/wp-content/uploads/2022/09/iphone-14-wallpapers.jpg" alt="">
+            <img src="https://cdn.wccftech.com/wp-content/uploads/2022/09/iphone-14-wallpapers.jpg" alt="">
+            <img src="https://cdn.wccftech.com/wp-content/uploads/2022/09/iphone-14-wallpapers.jpg" alt="">
+            <img src="https://cdn.wccftech.com/wp-content/uploads/2022/09/iphone-14-wallpapers.jpg" alt="">
+            <img src="https://cdn.wallpapersafari.com/95/5/UK50Ih.jpg" alt="">
+            <img src="https://cdn.wallpapersafari.com/95/5/UK50Ih.jpg" alt="">
+            <img src="https://cdn.wccftech.com/wp-content/uploads/2022/09/iphone-14-wallpapers.jpg" alt="">
+            <img src="https://cdn.wccftech.com/wp-content/uploads/2022/09/iphone-14-wallpapers.jpg" alt="">
+            <img src="https://cdn.wccftech.com/wp-content/uploads/2022/09/iphone-14-wallpapers.jpg" alt="">
+            <img src="https://cdn.wccftech.com/wp-content/uploads/2022/09/iphone-14-wallpapers.jpg" alt="">
+            <img src="https://cdn.wccftech.com/wp-content/uploads/2022/09/iphone-14-wallpapers.jpg" alt="">
+            <img src="https://cdn.wccftech.com/wp-content/uploads/2022/09/iphone-14-wallpapers.jpg" alt="">
+            <img src="https://midias.correiobraziliense.com.br/_midias/jpg/2023/07/24/1200x801/1_foto_da_ia-28557316.jpg" alt="">
+            <img src="https://midias.correiobraziliense.com.br/_midias/jpg/2023/07/24/1200x801/1_foto_da_ia-28557316.jpg" alt="">
+            <img src="https://midias.correiobraziliense.com.br/_midias/jpg/2023/07/24/1200x801/1_foto_da_ia-28557316.jpg" alt="">
+            <img src="https://midias.correiobraziliense.com.br/_midias/jpg/2023/07/24/1200x801/1_foto_da_ia-28557316.jpg" alt="">
+            <img src="https://midias.correiobraziliense.com.br/_midias/jpg/2023/07/24/1200x801/1_foto_da_ia-28557316.jpg" alt="">
+            <img src="https://midias.correiobraziliense.com.br/_midias/jpg/2023/07/24/1200x801/1_foto_da_ia-28557316.jpg" alt="">
+            <img src="https://midias.correiobraziliense.com.br/_midias/jpg/2023/07/24/1200x801/1_foto_da_ia-28557316.jpg" alt="">
+            <img src="https://midias.correiobraziliense.com.br/_midias/jpg/2023/07/24/1200x801/1_foto_da_ia-28557316.jpg" alt="">
+            <img src="https://cdn.wallpapersafari.com/95/5/UK50Ih.jpg" alt="">
+            <img src="https://cdn.wallpapersafari.com/95/5/UK50Ih.jpg" alt="">
+            <img src="https://cdn.wallpapersafari.com/95/5/UK50Ih.jpg" alt="">
+            <img src="https://cdn.wccftech.com/wp-content/uploads/2022/09/iphone-14-wallpapers.jpg" alt="">
+            <img src="https://cdn.wccftech.com/wp-content/uploads/2022/09/iphone-14-wallpapers.jpg" alt="">
+            <img src="https://cdn.wccftech.com/wp-content/uploads/2022/09/iphone-14-wallpapers.jpg" alt="">
+            <img src="https://cdn.wccftech.com/wp-content/uploads/2022/09/iphone-14-wallpapers.jpg" alt="">
+            <img src="https://cdn.wccftech.com/wp-content/uploads/2022/09/iphone-14-wallpapers.jpg" alt="">
+            <img src="https://cdn.wccftech.com/wp-content/uploads/2022/09/iphone-14-wallpapers.jpg" alt="">
+            <img src="https://cdn.wallpapersafari.com/95/5/UK50Ih.jpg" alt="">
+            <img src="https://cdn.wallpapersafari.com/95/5/UK50Ih.jpg" alt="">
+            <img src="https://cdn.wccftech.com/wp-content/uploads/2022/09/iphone-14-wallpapers.jpg" alt="">
+            <img src="https://cdn.wccftech.com/wp-content/uploads/2022/09/iphone-14-wallpapers.jpg" alt="">
+        </div>
+
+        <div class="ft-videos">
+            <div class="button-fot">
+            <button>Fotos</button>
+            <button>Videos</button>
+            </div>
+        </div>
+
+        <div class="inicial-fotos">
+            <div class="block-galeria">
+
+                <div class="galeria-ftvd">
+                    <button>
+                    <img src="https://cdn.wallpapersafari.com/95/5/UK50Ih.jpg" alt="">
+                    <h1>geral</h1>
+                    <span>42 fotos/videos</span>
+                </button>
+                </div>
+                <div class="galeria-ftvd">
+                    <button>
+                        <img src="https://cdn.dribbble.com/users/7171905/screenshots/20301593/ezgif.com-gif-maker__2_.gif" alt="">
+                        <h1>Videos</h1>
+                        <span>2 videos</span>
+                    </button>
+                </div>
+                <div class="galeria-ftvd">
+                    <button>
+                        <img src="https://cdn.wallpapersafari.com/95/5/UK50Ih.jpg" alt="">
+                        <h1>Fotos</h1>
+                        <span>40 fotos</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+      </div><!-- GALERIA-->
+
+
+
+      <!-- APP STORE-->
+      <div class="btn-gesto4" onclick="voltarInicio4()">
+    </div>
+    <div class="camera4" >
+        <div class="camera-frontal2"></div>
+    </div>
+    <div class="sinais4">
+        <i class="fa-solid fa-signal"></i>
+        <i class="fa-solid fa-wifi"></i>
+        <i class="fa-solid fa-battery-three-quarters"></i>
+    </div>
+
+    <div class="store-op">
+        <div class="op-logo">
+            <button id="today-store" onclick="inicioStore()">
+                <i class="fa-solid fa-calendar-week"></i>
+                <br>
+                <span>Today</span>
+            </button>
+            <button>
+                <i class="fa-solid fa-gamepad"></i>
+                <br>
+                <span>Games</span>
+            </button>
+            <button>
+                <i class="fa-solid fa-square"></i>
+                <br>
+                <span>Apps</span>
+            </button>
+            <button id="pesquisa-store" onclick="searchLibera()">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <br>
+                <span>pesquisar</span>
+            </button>
+        </div>
+    </div>
+
+      <div class="app-store">
+        <div class="store-conteudo">
+        <div class="store-perfil">
+            <button>
+                <img src="https://static.vecteezy.com/system/resources/previews/019/879/186/non_2x/user-icon-on-transparent-background-free-png.png" alt="">
+            </button>
+        </div>
+        <div class="store-inicial">
+            <div class="subway-surfers">
+                <div class="subway-details">
+                <h1>Novas Skins no game!!</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.  </p>
+                <div class="baixar-subway">
+                    <img src="https://upload.wikimedia.org/wikipedia/pt/1/1e/Subway_Surfers_logo.png" alt="">
+                    <div>
+                    <h2>Subway Surfers</h2>
+                    <span>SYBO Games</span>
+                    </div>
+                    <button>Baixar</button>
+                </div>
+                </div><!--SUBWAY DETAILS-->
+            </div>
+        </div>
+
+        <div class="titulo-store-apps">
+            <h1>Apps para seu dia a dia</h1>
+        </div>
+        <div class="store-apps">
+            <div class="apps-store-flex">
+               <button>
+                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Instagram-Icon.png/1024px-Instagram-Icon.png" alt="">
+                 <div>
+                    <h3>Instagram</h3>
+                    <span>Meta</span>
+                    <a href="">baixar</a>
+                 </div>
+               </button>  
+
+               <button>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/2044px-WhatsApp.svg.png" alt="">
+                <div>
+                   <h3>WhatsApp</h3>
+                   <span>Meta</span>
+                   <a href="">baixar</a>
+                </div>
+              </button>  
+            </div>
+            
+        </div>
+        <div class="store-apps">
+            <div class="apps-store-flex">
+               <button>
+                 <img src="https://i.pinimg.com/736x/08/3b/af/083baf9e4d4319a92d9f1ccea7ae5782.jpg" alt="">
+                 <div>
+                    <h3>TikTok</h3>
+                    <span>Meta</span>
+                    <a href="">baixar</a>
+                 </div>
+               </button>  
+
+               <button>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_B7tgTnKn2YSNwPP93c1R0bBk-ZJncVMh9-eEAM2zBA&s" alt="">
+                <div>
+                   <h3>Youtube</h3>
+                   <span>Meta</span>
+                   <a href="">baixar</a>
+                </div>
+              </button>  
+
+            </div>
+        </div>
+        <div class="store-apps">
+            <div class="apps-store-flex">
+               <button>
+                 <img src="https://freepnglogo.com/images/all_img/1691832278twitter-x-logo-png.png" alt="">
+                 <div>
+                    <h3>X</h3>
+                    <span>X</span>
+                    <a href="">baixar</a>
+                 </div>
+               </button>  
+            </div>
+        </div>
+
+        <div class="store-apps">
+            <div class="apps-store-flex">
+               <button>
+                 <img src="https://static-00.iconduck.com/assets.00/kwai-icon-1856x2048-exevi87r.png" alt="">
+                 <div>
+                    <h3>Kwai</h3>
+                    <span>Kwai</span>
+                    <a href="">baixar</a>
+                 </div>
+               </button>  
+            </div>
+        </div>
+
+        <div class="store-apps">
+            <div class="apps-store-flex">
+               <button>
+                 <img src="https://static-00.iconduck.com/assets.00/kwai-icon-1856x2048-exevi87r.png" alt="">
+                 <div>
+                    <h3>Kwai</h3>
+                    <span>Kwai</span>
+                    <a href="">baixar</a>
+                 </div>
+               </button>  
+            </div>
+        </div>
+        </div><!-- CONTEUDO-->
+
+        <div class="search-store">
+            <div class="search-titulo">
+                <h1>Pesquisar</h1>
+                <button>
+                    <img src="https://static.vecteezy.com/system/resources/previews/019/879/186/non_2x/user-icon-on-transparent-background-free-png.png" alt="">
+                </button>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="pesquise..." class="search-input">
+                <div class="search-micro">
+                 <button><i class="fa-solid fa-microphone"></i></button>
+                </div>
+            </div>
+            <div class="search-lupa">
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+               </div>
+               
+           <div class="pesquisados">
+            <h1>pesquisados</h1>
+             <a href="">Freefire</a>
+             <a href="">Youtube </a>
+             <a href="">CapCut</a>
+           </div>
+           
+           <div class="search-sugeridos">
+            <h1>Sugeridos</h1>
+           </div>
+
+           <div class="store-apps store-apps-search">
+            <div class="apps-store-flex">
+               <button>
+                 <img src="https://seeklogo.com/images/C/capcut-logo-A52AD0DA7D-seeklogo.com.png" alt="">
+                 <div>
+                    <h3>CapCut</h3>
+                    <span>Bytedance </span>
+                    <a href="">baixar</a>
+                 </div>
+               </button>  
+            </div>
+        </div>
+
+        <div class="store-apps store-apps-search">
+            <div class="apps-store-flex">
+               <button>
+                 <img src="https://m.media-amazon.com/images/I/81OMgLAhLCL.png" alt="">
+                 <div>
+                    <h3>8 ball Pool</h3>
+                    <span>Miniclip.com </span>
+                    <a href="">baixar</a>
+                 </div>
+               </button>  
+            </div>
+        </div>
+
+
+           </div>
+        </div><!--PESQUISA STORE-->
+      </div><!--APPLE STORE-->
+
+
+
+
+
+
+
+
+
+    </div><!--TELA INICIAL-->
+
+
+    </div><!--CELULAR-->
+
+
+    <div class="titulo-wallpeper">
+        <div class="back-titulo"></div>
+        <h1>Escolha um dos 4 wallpapers</h1>
+    </div>
+
+
+    <div class="celular-traseira"  id="celular-traseira">
+        <div class="design hidden layer" data-speed="5">
+            <div class="camera-quadro ">
+
+                <!--CAMERA 1 DETALHES-->
+                <div class="camera-1">
+                    <div class="camera-1-fl">
+                        <div class="camera-1-details"></div>
+                    </div>
+                </div>
+
+                <div class="flash"></div>
+
+
+                     <!--CAMERA 2 DETALHES-->
+                     <div class="camera-1 camera-2">
+                        <div class="camera-1-fl">
+                            <div class="camera-1-details"></div>
+                        </div>
+                    </div>
+
+                        <!--CAMERA 3 DETALHES-->
+                        <div class="camera-1 camera-3">
+                            <div class="camera-1-fl">
+                                <div class="camera-1-details"></div>
+                            </div>
+                        </div>
+
+                        <div class="camera-details"></div>
+                        <div class="camera-details-2"></div>
+            </div>
+
+            <div class="apple-logo">
+            <i class="fa-brands fa-apple"></i>
+            </div>
+        </div>
+    </div><!--CELULAR TRASEIRA-->
+
+
+
+
+    <div class="iphone-14" id="template-areas">
+        <div id="logo-iphone">
+          <h1></h1>
+        </div>
+        <div id="iphone-titulo">
+            <h1>Iphone 14 pro max</h1>
+            <img src="https://static.prod.middleware.zagg.com/_next/image?url=https://cdn11.bigcommerce.com/s-vkwgdkpvsn/images/stencil/380x380/products/1170/6011/100113321_ZAGG_InvisibleShield_Glass_Elite_Camera_Lens_Apple_iPhone_15_Pro_iPhone_15_Pro_Max_Screen_HERO__95844.1695308782.png?c=1?c=1&w=256&q=90&fm=webp" alt="">
+            <img src="https://static.prod.middleware.zagg.com/_next/image?url=https://cdn11.bigcommerce.com/s-uv4dd6xvbk/images/stencil/380x380/products/2344/6706/200111577_iPhone%2015%20Pro%20Max%202023_Gomez_GlassElite_HERO__69312.1694539569.png?c=1?c=1&w=256&q=90&fm=webp" alt="">
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <a href="#celular">Iphone frente </a>
+            <a href="#celular-traseira">iphone traseira</a>
+        </div>
+        <div class="me">
+            <a href="https://github.com/raulcacula">Github  <i class="fa-brands fa-github"></i></a>
+            <p>Raulcacula</p>
+        </div>
+    </footer>
+
+
+
+    <script src="apple.js"></script>
+    
+    <!-- FONT ROBOTO-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/43fd509247.js" crossorigin="anonymous"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+</body>
+</html>
